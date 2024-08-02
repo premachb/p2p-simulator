@@ -14,7 +14,7 @@ function ServerList() {
   return (
     <div className="p-5 flex flex-col">
       <div>
-        <button onClick={() => setSimulationStarted(!simulationStarted)} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mb-5 mr-2">Toggle Simulation (Start or Stop)</button> 
+        <button onClick={() => setSimulationStarted(!simulationStarted)} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mb-5 mr-2">{simulationStarted ? 'Turn Simulation Off' : 'Turn Simulation On'}</button> 
         <button onClick={() => resetSimulation() } className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mb-5">Reset Simulation</button>
       </div>
       <div className="flex flex-row">
