@@ -29,7 +29,7 @@ export const ServerContext = createContext<ServerContext>({
   servers: [],
   setServers: () => {},
   updateServer: () => {},
-  getServerList: (callerId: number) => [],
+  getServerList: (callerId: number) => [{ id: callerId, chunks: [], missingChunks: new Set<number>(), receivedChunks: new Set<number>() }],
   simulationStarted: false,
   setSimulationStarted: () => {},
   logs: [],
